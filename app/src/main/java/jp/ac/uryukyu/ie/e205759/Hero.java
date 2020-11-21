@@ -51,15 +51,26 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
-    
+    /**
+     * フィールド変数nameにアクセスするgetterメソッド。
+     * @return this.name Heroの名前
+     */
     public String getName(){
         return this.name;
     }
     
+    /**
+     * フィールド変数hitPointにアクセスするgetterメソッド。
+     * @return this.hitPoint Heroの現在体力
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
 
+    /**
+     * フィールド変数deadにアクセスするgetterメソッド。
+     * @return this.dead Heroの生死の状態
+     */
     public boolean getDead(){
         return this.dead;
     }

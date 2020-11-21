@@ -53,11 +53,18 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
-
+    /**
+     * フィールド変数nameにアクセスするgetterメソッド。
+     * @return this.name Enemyの名前
+     */
     public String getName(){
         return this.name;
     }
-
+    
+    /**
+     * フィールド変数deadにアクセスするgetterメソッド。
+     * @return this.dead Enemyの生死の状態
+     */
     public boolean getDead(){
         return this.dead;
     }
