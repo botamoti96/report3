@@ -53,7 +53,7 @@ public class Hero {
     }
     /**
      * フィールド変数nameにアクセスするgetterメソッド。
-     * @return this.name Heroの名前
+     * @return name Heroの名前
      */
     public String getName(){
         return this.name;
@@ -61,7 +61,7 @@ public class Hero {
     
     /**
      * フィールド変数hitPointにアクセスするgetterメソッド。
-     * @return this.hitPoint Heroの現在体力
+     * @return hitPoint Heroの現在体力
      */
     public int getHitPoint(){
         return this.hitPoint;
