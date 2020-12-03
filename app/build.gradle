@@ -11,6 +11,14 @@ plugins {
     id 'application'
 }
 
+sourceCompatibility = 10
+
+apply plugin: "java"
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
@@ -29,10 +37,16 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'jp.ac.uryukyu.ie.e205759.App'
+    mainClassName = 'Main'
 }
 
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes  "Main-Class": "Main"
+    }
 }
